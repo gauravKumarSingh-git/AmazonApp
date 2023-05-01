@@ -52,6 +52,16 @@
             "projectName": "payment-service",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CloudGatewayApplication<cloud-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.amazon.cloudgateway.CloudGatewayApplication",
+            "projectName": "cloud-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
