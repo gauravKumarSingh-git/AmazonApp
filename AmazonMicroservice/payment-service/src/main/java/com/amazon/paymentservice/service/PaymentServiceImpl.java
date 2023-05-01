@@ -29,5 +29,12 @@ public class PaymentServiceImpl implements PaymentService {
         log.info("Payment details saved successsfully with id " + payment.getId());
         return payment.getId();
     }
+
+    @Override
+    public Payment getPaymentDetailsByOrderId(Long orderId) {
+        log.info("getting payment details for order id " + orderId);
+        Payment payment = paymentRepository.findByOrderId(orderId);
+        return payment;
+    }
     
 }
